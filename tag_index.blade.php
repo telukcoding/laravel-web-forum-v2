@@ -23,7 +23,7 @@
                           <a href="{{route('tag.index')}}">Tag</a> 
                           </div>
                           <div class="search" style="margin: 3px;">
-                          <div class="col-md-4 float-right" style="    padding-right: 0;">
+                          <div class="col-md-4 float-right" style="padding-right: 0;">
                           <div class="input-group">
                           <input type="text" class="form-control" placeholder="Search for..." style=" margin-right: 3px;background: #f5f8fa;">
                           <span class="input-group-btn">
@@ -38,7 +38,7 @@
 <div class="row">
    <div class="col-md-8">
      @foreach($tags as $tag)
-       <a href="{{route('tagshow', $tag->name)}}" class="btn btn-success btn-sm">{{$tag->name}} ({{$tag->forums->count()}} <small>thread</small>)</a>
+       <a href="#" class="btn btn-success btn-sm">{{$tag->name}} ({{$tag->forums->count()}} <small>thread</small>)</a>
      @endforeach
     </div>
        <div class="col-md-4">
